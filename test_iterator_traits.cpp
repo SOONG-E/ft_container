@@ -8,9 +8,9 @@
 template<class BidirIt>
 void my_reverse(BidirIt first, BidirIt last)
 {
-    typename ::iterator_traits<BidirIt>::difference_type n = std::distance(first, last);
+    typename ft::iterator_traits<BidirIt>::difference_type n = std::distance(first, last);
     for (--n; n > 0; n -= 2) {
-        typename ::iterator_traits<BidirIt>::value_type tmp = *first;
+        typename ft::iterator_traits<BidirIt>::value_type tmp = *first;
         *first++ = *--last;
         *last = tmp;
     }
@@ -50,8 +50,4 @@ int main()
         std::cout << a[n] << ' ';
     }
     std::cout << '\n';
- 
-//    std::istreambuf_iterator<char> i1(std::cin), i2;
-//    my_reverse(i1, i2); // compilation error
- 
 }

@@ -3,7 +3,7 @@
 #include "enable_if.hpp"
 
 template <class T>
-typename ::enable_if<std::is_integral<T>::value,bool>::type
+typename ft::enable_if<std::is_integral<T>::value,bool>::type
   is_odd (T i) {return bool(i%2);}
 
 int main() {

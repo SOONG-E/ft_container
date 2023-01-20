@@ -7,11 +7,11 @@
 int main () {
 	{
 		std::cout << "=-=-=- test. Constructor =-=-=-" << std::endl;
-		::pair <std::string,double> product1;
-		::pair <std::string,double> product2 ("tomatoes",2.30);
-		::pair <std::string,double> product3 (product2); 
+		ft::pair <std::string,double> product1;
+		ft::pair <std::string,double> product2 ("tomatoes",2.30);
+		ft::pair <std::string,double> product3 (product2); 
 
-		product1 = ::make_pair(std::string("lightbulbs"),0.99);
+		product1 = ft::make_pair(std::string("lightbulbs"),0.99);
 
 		product2.first = "shoes";
 		product2.second = 39.90; 
@@ -35,9 +35,9 @@ int main () {
 	}
 	{
 		std::cout << "=-=-=- test. make_fair() =-=-=-" << std::endl;
-		::pair <std::string,int> planet, homeplanet;
+		ft::pair <std::string,int> planet, homeplanet;
 
-		planet = ::make_pair("Earth",6371);
+		planet = ft::make_pair("Earth",6371);
 
 		homeplanet = planet;
 
@@ -57,9 +57,9 @@ int main () {
 	{
 		std::cout << "=-=-=- test. overloaded operator =-=-=-" << std::endl;
 
-		::pair <std::string,double> product1 ("tomatoes",2.30);
-		::pair <std::string,double> product2 ("a", 4);
-		::pair <std::string,double> product3 ("tomatoes",5);
+		ft::pair <std::string,double> product1 ("tomatoes",2.30);
+		ft::pair <std::string,double> product2 ("a", 4);
+		ft::pair <std::string,double> product3 ("tomatoes",5);
 
 		std::pair <std::string,double> std_product1 ("tomatoes",2.30);
 		std::pair <std::string,double> std_product2 ("a", 4);

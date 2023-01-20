@@ -10,7 +10,7 @@ int main () {
   int myints[] = {20,40,60,80,100};               //   myints: 20 40 60 80 100
   std::vector<int>myvector (myints,myints+5);     // myvector: 20 40 60 80 100
 
-  if ( ::equal (myvector.begin(), myvector.end(), myints) )
+  if ( ft::equal (myvector.begin(), myvector.end(), myints) )
     std::cout << "The contents of both sequences are equal.\n";
   else
     std::cout << "The contents of both sequences differ.\n";
@@ -18,7 +18,7 @@ int main () {
   myvector[3]=81;                                 // myvector: 20 40 60 81 100
 
   // using predicate comparison:
-  if ( ::equal (myvector.begin(), myvector.end(), myints, mypredicate) )
+  if ( ft::equal (myvector.begin(), myvector.end(), myints, mypredicate) )
     std::cout << "The contents of both sequences are equal.\n";
   else
     std::cout << "The contents of both sequences differ.\n";

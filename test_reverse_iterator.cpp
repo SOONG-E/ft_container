@@ -13,8 +13,8 @@ int main () {
 
 {
 	std::cout << "=-=-=-=-= test : operator * =-=-=-=-=" << std::endl;
-  ::reverse_iterator<iter_type> rev_end (myvector.begin());
-  ::reverse_iterator<iter_type> rev_begin (myvector.end());
+  ft::reverse_iterator<iter_type> rev_end (myvector.begin());
+  ft::reverse_iterator<iter_type> rev_begin (myvector.end());
 
   std::reverse_iterator<iter_type> std_rev_end (myvector.begin());
   std::reverse_iterator<iter_type> std_rev_begin (myvector.end());
@@ -25,8 +25,8 @@ int main () {
 
 {
 	std::cout << "=-=-=-=-= test : operator + =-=-=-=-=" << std::endl;
-	::reverse_iterator<iter_type> rev_it(myvector.begin());
-  	std::reverse_iterator<iter_type> std_rev_it(myvector.begin());
+	ft::reverse_iterator<iter_type> rev_it(myvector.begin());
+  std::reverse_iterator<iter_type> std_rev_it(myvector.begin());
 
   std::cout << "The fourth element from the end is: " << *(rev_it + 3) << '\n';
   std::cout << "The fourth element from the end is: " << *(std_rev_it + 3) << '\n';
@@ -36,8 +36,8 @@ int main () {
 	  iter_type from (myvector.begin()); 
   	iter_type until (myvector.end());
 
-  	::reverse_iterator<iter_type> rev_until (from); 
-  	::reverse_iterator<iter_type> rev_from (until); 
+  ft::reverse_iterator<iter_type> rev_until (from); 
+  ft::reverse_iterator<iter_type> rev_from (until); 
 
 	std::reverse_iterator<iter_type> std_rev_until (from); 
   	std::reverse_iterator<iter_type> std_rev_from (until); 
@@ -63,7 +63,7 @@ int main () {
 }
 {
 	std::cout << "=-=-=-=-= test : operator += =-=-=-=-=" << std::endl;
-	::reverse_iterator<iter_type> rev_iterator(myvector.end());
+	ft::reverse_iterator<iter_type> rev_iterator(myvector.end());
 	std::reverse_iterator<iter_type> std_rev_iterator(myvector.end());
 
   rev_iterator += 2;
@@ -81,8 +81,8 @@ int main () {
 
   typedef std::map<int,std::string>::iterator map_iter;
 
-	::reverse_iterator<map_iter> rev_end (numbers.begin());
-  ::reverse_iterator<map_iter> rev_iterator (numbers.end());
+	ft::reverse_iterator<map_iter> rev_end (numbers.begin());
+  ft::reverse_iterator<map_iter> rev_iterator (numbers.end());
 
   for ( ; rev_iterator != rev_end ; ++rev_iterator )
     std::cout << rev_iterator->first << ' ' << rev_iterator->second << '\n';
@@ -96,7 +96,7 @@ int main () {
 }
 {
 	std::cout << "=-=-=-=-= test : operator [] =-=-=-=-=" << std::endl;
-  ::reverse_iterator<iter_type> rev_iterator(myvector.end());
+  ft::reverse_iterator<iter_type> rev_iterator(myvector.end());
   std::reverse_iterator<iter_type> std_rev_iterator(myvector.end());
 
   std::cout << "The fourth element from the end is: " << rev_iterator[3] << '\n';
@@ -104,8 +104,8 @@ int main () {
 }
 {
 	std::cout << "=-=-=-=-= test : base() =-=-=-=-=" << std::endl;
-	::reverse_iterator<iter_type> rev_end (myvector.begin());
-  ::reverse_iterator<iter_type> rev_begin (myvector.end());
+	ft::reverse_iterator<iter_type> rev_end (myvector.begin());
+  ft::reverse_iterator<iter_type> rev_begin (myvector.end());
 
   std::cout << "myvector:";
   for (iter_type it = rev_end.base(); it != rev_begin.base(); ++it)
