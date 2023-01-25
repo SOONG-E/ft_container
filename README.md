@@ -16,6 +16,8 @@ base()
 std::reverse_iterator(it).base() == it
 base iterator를 반환함
 
+복사 생성자, 대입 연산자 사용 시 iterator다를 경우 
+
 
 ### enable_if
 
@@ -38,3 +40,8 @@ https://en.cppreference.com/w/cpp/algorithm/equal
 
 https://en.cppreference.com/w/cpp/utility/pair
 https://cplusplus.com/reference/utility/pair/?kw=pair
+
+### vector
+
+https://cplusplus.com/reference/vector/vector/?kw=vector
+https://en.cppreference.com/w/cpp/container/vector
